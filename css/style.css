@@ -3,7 +3,7 @@ body {
   margin: 0 auto;
   padding: 0 auto;
   font-family: 'Lato', sans-serif;
-  font-size: 16px; }
+  font-size: 18px; }
 
 .picture img {
   width: 100%; }
@@ -40,7 +40,6 @@ nav .flex {
   width: 3em;
   color: #F2F2F2;
   width: 30%;
-  /* Or whatever */
   margin: auto; }
 
 i {
@@ -69,10 +68,6 @@ article {
   width: 35%;
   margin-bottom: 4%; }
 
-.contact {
-  text-align: justify;
-  padding: 4%; }
-
 .part2 img {
   display: block;
   width: 60%;
@@ -81,7 +76,8 @@ article {
 
 .contact {
   text-align: center;
-  display: block; }
+  display: block;
+  padding: 4%; }
 
 .form {
   width: 96%;
@@ -168,12 +164,41 @@ footer {
 label {
   text-align: left;
   font-size: 12px;
-  display: block;
+  display: inline-block;
   margin-bottom: 0;
   margin-top: 1em; }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 900px) and (max-width: 1250px) {
+  .part1 {
+    width: 55%;
+    margin-right: 0 auto;
+    padding-right: 0 auto; }
+
   .part2 {
+    margin-left: 2%;
+    width: 45%;
+    height: 100%; }
+
+  .part2 img {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-bottom: 0 auto; }
+
+  label {
+    padding: 2%; }
+
+  .form {
+    margin-top: 6%;
+    padding-bottom: 6%; } }
+@media screen and (max-width: 900px) {
+  article {
+    display: inline-block; }
+
+  .part2 {
+    width: 100%;
+    margin: 0 auto; }
+
+  .part2 img {
     display: none; }
 
   .part1 {
@@ -193,6 +218,34 @@ label {
     padding-left: 0; }
 
   .part1 p:nth-child(2) {
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  .form {
+    width: 100%;
+    margin: auto;
+    padding-top: 0; }
+
+  label {
+    display: none; }
+
+  input[type="email"], input[type="name"], textarea {
+    padding: 1% 1%;
+    width: 45%;
+    display: inline;
+    margin-bottom: 1%;
+    margin-top: 1%; }
+
+  textarea {
+    padding: 0 auto;
+    margin-top: 1%;
+    display: flex;
+    margin: 0 auto;
+    width: 92%; }
+
+  .submit {
+    margin-top: 2%;
+    border: 1px solid #422254;
+    padding: 1% 42%;
+    text-shadow: 0px 1px 0px #2e163b; } }
 
 /*# sourceMappingURL=style.css.map */
